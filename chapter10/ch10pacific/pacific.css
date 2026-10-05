@@ -1,0 +1,503 @@
+/* General styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #90c7e3;
+    background-image: linear-gradient(to bottom, #ffffff, #90c7e3);
+    background-repeat: no-repeat;
+    color: #555555;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#wrapper {
+    width: 80%;
+    max-width: 2048px;
+    margin: 2rem auto;
+    background-color: #ffffff;
+    border: 1px solid #000033;
+    box-shadow: 3px 3px 3px #333333;
+}
+
+/* Header */
+header {
+    min-height: 120px;
+    padding: 1.5rem;
+    background-color: #000032;
+    background-image: url("images/sunset.jpg");
+    background-position: right;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 2.5rem;
+    letter-spacing: 0.1em;
+}
+
+header a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Horizontal navigation */
+nav {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    background-color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem 1.5rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    margin: 0;
+}
+
+nav a {
+    display: block;
+    padding: 0.25rem;
+    text-decoration: none;
+}
+
+nav a:link {
+    color: #000033;
+}
+
+nav a:visited {
+    color: #344873;
+}
+
+nav a:hover,
+nav a:focus {
+    color: #1976a3;
+}
+
+/* Hero images */
+#homehero,
+#yurthero,
+#trailhero,
+#reservehero {
+    display: block;
+    height: 300px;
+    margin: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#homehero {
+    background-image: url("images/coast.jpg");
+}
+
+#yurthero {
+    background-image: url("images/yurt.jpg");
+}
+
+#trailhero {
+    background-image: url("images/trail.jpg");
+}
+
+#reservehero {
+    background-image: url("images/reservations.jpg");
+}
+
+/* Main content */
+main {
+    display: block;
+    min-width: 0;
+    margin: 0;
+    padding: 1.5rem 2rem;
+    background-color: #ffffff;
+    overflow: auto;
+}
+
+h2 {
+    margin-top: 0;
+    color: #3399cc;
+    font-family: Georgia, "Times New Roman", serif;
+    text-shadow: 1px 1px 1px #cccccc;
+}
+
+h3 {
+    color: #000033;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+dt {
+    margin-top: 1rem;
+    color: #000033;
+    font-weight: bold;
+}
+
+dd {
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+p,
+main li {
+    line-height: 1.5;
+}
+
+.resort {
+    color: #1976a3;
+    font-weight: bold;
+}
+
+address {
+    font-style: normal;
+}
+
+main img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Footer */
+footer {
+    margin: 0;
+    padding: 1.5rem;
+    background-color: #ffffff;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 0.8rem;
+    font-style: italic;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Chapter 9 Yurt Packages table */
+#special {
+    clear: both;
+    margin-top: 2rem;
+}
+
+table {
+    width: 100%;
+    margin: 1rem auto;
+    border: 2px solid #3399cc;
+    border-collapse: collapse;
+}
+
+caption {
+    padding: 0.75rem;
+    color: #000033;
+    font-weight: bold;
+}
+
+th,
+td {
+    padding: 0.75rem;
+    border: 1px solid #3399cc;
+    text-align: center;
+}
+
+thead {
+    background-color: #003366;
+    color: #ffffff;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #fff3cc;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+tbody tr {
+    transition: background-color 0.3s ease;
+}
+
+tbody tr:hover {
+    background-color: #cce9f5;
+}
+
+td:nth-child(2),
+.text {
+    text-align: left;
+}
+
+/* Chapter 10 Reservations headings */
+#reservations > h2,
+#reservations > h3,
+#reservations > p {
+    text-align: center;
+}
+
+#reservations > h3 {
+    margin-bottom: 0.5rem;
+}
+
+/* Reservation form */
+#reservation-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 32rem;
+    margin: 1rem auto 2rem;
+    padding: 1.5rem;
+    background-color: #f8f8fa;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+#reservation-form label {
+    display: block;
+    margin: 0 0 0.75rem;
+    color: #333333;
+    font-weight: bold;
+    text-align: left;
+}
+
+#reservation-form input,
+#reservation-form textarea {
+    display: block;
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    margin: 0 0 1rem;
+    padding: 0.75rem;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    background-color: #ffffff;
+    color: #333333;
+    font: inherit;
+}
+
+#reservation-form textarea {
+    min-height: 6rem;
+    resize: vertical;
+}
+
+#reservation-form input:focus,
+#reservation-form textarea:focus {
+    outline: 2px solid #3399cc;
+    outline-offset: 2px;
+}
+
+#reservation-form input[type="submit"] {
+    min-height: 44px;
+    margin: 0;
+    border: none;
+    background-color: #003366;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#reservation-form input[type="submit"]:hover {
+    background-color: #005588;
+}
+
+/* Tablet layout */
+@media (max-width: 64rem) {
+    #wrapper {
+        width: 95%;
+        margin: 1rem auto;
+    }
+}
+
+/* Small-screen layout */
+@media (max-width: 37.5rem) {
+    #wrapper {
+        width: 100%;
+        margin: 0;
+        border: none;
+        box-shadow: none;
+    }
+
+    header {
+        min-height: 100px;
+        padding: 1.5rem 1rem;
+        background-image: none;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    nav {
+        font-size: 1rem;
+    }
+
+    nav ul {
+        gap: 0.5rem 1rem;
+    }
+
+    main {
+        padding: 1.5rem 1rem;
+    }
+
+    #homehero,
+    #yurthero,
+    #trailhero,
+    #reservehero {
+        height: 200px;
+    }
+
+    /* Stacked Yurt Packages table */
+    table,
+    tbody,
+    tbody tr,
+    tbody td {
+        display: block;
+        width: 100%;
+    }
+
+    thead {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip-path: inset(50%);
+    }
+
+    tbody tr {
+        margin-bottom: 1rem;
+        border: 1px solid #3399cc;
+    }
+
+    tbody td {
+        display: grid;
+        grid-template-columns: 6.5rem minmax(0, 1fr);
+        gap: 0.5rem;
+        border: none;
+        border-bottom: 1px solid #cccccc;
+        text-align: left;
+        overflow-wrap: break-word;
+    }
+
+    tbody td::before {
+        color: #000033;
+        font-weight: bold;
+    }
+
+    tbody td:nth-child(1)::before {
+        content: "Package";
+    }
+
+    tbody td:nth-child(2)::before {
+        content: "Description";
+    }
+
+    tbody td:nth-child(3)::before {
+        content: "Nights";
+    }
+
+    tbody td:nth-child(4)::before {
+        content: "Cost";
+    }
+
+    tbody td:last-child {
+        border-bottom: none;
+    }
+}
+
+/* Chapter 10 mobile form layout */
+@media (max-width: 32.5rem) {
+    #reservation-form {
+        max-width: 100%;
+        padding: 1rem;
+    }
+
+    #reservation-form input,
+    #reservation-form textarea {
+        max-width: 100%;
+    }
+
+    #reservation-form input[type="submit"] {
+        min-height: 48px;
+    }
+}
+/* Match Chapter 9 Yurt Packages styling */
+#special table {
+    border: 3px solid #1976a3;
+}
+
+#special tbody tr:nth-child(odd) {
+    background-color: #ffd880;
+}
+
+#special tbody tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+#special tbody tr:hover {
+    background-color: #cce9f5;
+}
+
+@media (max-width: 37.5rem) {
+    #special table caption,
+    #special table thead {
+        display: none;
+    }
+
+    #special table,
+    #special tbody,
+    #special tbody tr {
+        display: block;
+        width: 100%;
+    }
+
+    #special tbody tr {
+        margin: 0;
+        border: none;
+    }
+
+    #special tbody td {
+        display: grid;
+        grid-template-columns: 32% minmax(0, 1fr);
+        gap: 0.5rem;
+        width: 100%;
+        padding: 0.65rem 0.75rem;
+        border: none;
+        border-bottom: 2px solid #1976a3;
+        text-align: left;
+    }
+
+    #special tbody td::before {
+        color: #00658a;
+        font-weight: bold;
+    }
+
+    #special tbody td:nth-child(1)::before {
+        content: "Package:";
+    }
+
+    #special tbody td:nth-child(2)::before {
+        content: "Description:";
+    }
+
+    #special tbody td:nth-child(3)::before {
+        content: "Nights:";
+    }
+
+    #special tbody td:nth-child(4)::before {
+        content: "Cost:";
+    }
+
+    #special tbody tr:last-child td:last-child {
+        border-bottom: none;
+    }
+}
